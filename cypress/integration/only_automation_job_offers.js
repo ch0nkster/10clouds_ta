@@ -1,6 +1,8 @@
 describe('User finds all open positions with \'Automation\' in job title', () => {
-  it('Opens careers page', () => {
-    cy.visit('/careers')
+  it('Opens 10clouds Careers tab', () => {
+    cy.get('span')
+      .contains('Careers')
+      .click()
   })
   it('Searches for \'Automation\' in job offers', () => {
     cy.get('#search-job')

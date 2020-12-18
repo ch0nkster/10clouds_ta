@@ -1,12 +1,9 @@
 describe('User finds job offers for \'QA Automation Engineer\' on 10clouds Careers page', () => {
-  it('Visits the 10clouds website', () => {
-    cy.visit('')
-  })
   it('Sees the 10clouds website loaded', () => {
     cy.get('.description')
       .contains('A team of 100+ experienced developers and designers')
   })
-  it('Opens 10clouds Careers page', () => {
+  it('Opens 10clouds Careers tab', () => {
     cy.get('span')
       .contains('Careers')
       .click()
