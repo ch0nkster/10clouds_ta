@@ -1,5 +1,3 @@
-import './commands'
-
-beforeEach(() => {
+before(() => {
   cy.visit('/')
 })
