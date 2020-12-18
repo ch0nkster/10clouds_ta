@@ -5,7 +5,8 @@
     },
     "extends": [
         "standard",
-        "plugin:cypress/recommended"
+        "plugin:cypress/recommended",
+        "plugin:chai-friendly"
     ],
     "parserOptions": {
         "ecmaVersion": 12,
